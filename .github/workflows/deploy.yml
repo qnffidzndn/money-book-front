@@ -39,7 +39,7 @@ jobs:
           host: ${{ secrets.EC2_HOST }}
           username: ec2-user
           key: ${{ secrets.EC2_KEY }}
-          command_timeout: 5m
+          command_timeout: 10m
           script: |
             cd ~/money-book
             docker pull facepark/money-book-front:latest
