@@ -41,5 +41,6 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           command_timeout: 5m
           script: |
+            cd ~/money-book
             docker pull facepark/money-book-front:latest
-            docker-compose -f ~/docker-compose.yml up -d --no-deps --no-build money-book-front
+            docker-compose up -d
