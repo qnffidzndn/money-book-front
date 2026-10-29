@@ -1,6 +1,7 @@
 import api from './index';
 
-export const getEmergencyFunds = () => api.get(`/api/emergency-fund-logs`);
+export const getEmergencyFunds = (params = {}) =>
+  api.get(`/api/emergency-fund-logs`, { params });
 
 export const createEmergencyFund = (data) => api.post(`/api/emergency-fund-logs`, data);
 

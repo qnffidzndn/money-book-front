@@ -1,0 +1,231 @@
+.asset-page {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── 총 자산 카드 ── */
+.grand-total-card {
+  background: #1e293b;
+  border-radius: 14px;
+  padding: 28px 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grand-total-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.05em;
+}
+
+.grand-total-amount {
+  font-size: 36px;
+  font-weight: 700;
+  color: #60a5fa;
+  letter-spacing: -0.02em;
+}
+
+.type-card.type-card-used {
+  border-color: #fecaca;
+  background: #fff5f5;
+}
+
+.type-amount-used {
+  color: #dc2626;
+}
+
+/* ── 유형별 요약 ── */
+.type-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.type-card {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.type-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.type-amount {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+/* ── 필터 바 ── */
+.filter-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filter-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.filter-select {
+  padding: 7px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #1e293b;
+  background: #fff;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.filter-select:focus {
+  border-color: #2563eb;
+}
+
+.filter-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-add {
+  padding: 7px 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.btn-add:hover {
+  background: #dbeafe;
+}
+
+/* ── 자산 테이블 ── */
+.asset-section {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  overflow: hidden;
+}
+
+.asset-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.asset-table th {
+  text-align: left;
+  padding: 10px 16px;
+  color: #64748b;
+  font-weight: 600;
+  font-size: 13px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+  white-space: nowrap;
+}
+
+.asset-table td {
+  padding: 12px 16px;
+  color: #334155;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.asset-table tr:last-child td {
+  border-bottom: none;
+}
+
+.asset-table tr.clickable {
+  cursor: pointer;
+  transition: background 0.1s;
+}
+
+.asset-table tr.clickable:hover td {
+  background: #f8fafc;
+}
+
+/* 셀 스타일 */
+.col-date {
+  color: #64748b;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.col-member {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.col-name {
+  font-weight: 500;
+}
+
+.col-amount {
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.col-desc {
+  color: #94a3b8;
+  font-size: 13px;
+}
+
+/* 유형 뱃지 */
+.type-badge {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.type-badge.type-CASH        { background: #eff6ff; color: #2563eb; }
+.type-badge.type-STOCK       { background: #f0fdf4; color: #16a34a; }
+.type-badge.type-REAL_ESTATE { background: #fff7ed; color: #c2410c; }
+.type-badge.type-ETC         { background: #f8fafc; color: #64748b; }
+.type-badge.type-DEBT        { background: #fef2f2; color: #dc2626; }
+
+.col-amount-debt {
+  font-weight: 700;
+  color: #dc2626;
+}
+
+/* ── 기타 ── */
+.empty-msg {
+  font-size: 14px;
+  color: #94a3b8;
+  padding: 24px 16px;
+}
+
+.loading-msg {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.error-msg {
+  color: #ef4444;
+  font-size: 14px;
+}

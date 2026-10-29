@@ -1,0 +1,197 @@
+.plan-page {
+  max-width: 860px;
+}
+
+.plan-section {
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  padding: 24px;
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* 월급 섹션 */
+.income-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.income-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  color: #334155;
+}
+
+.income-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.income-row .amount {
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.income-row.total {
+  margin-top: 8px;
+  padding-top: 12px;
+  border-top: 2px solid #e2e8f0;
+  font-weight: 700;
+  font-size: 16px;
+  color: #1e293b;
+}
+
+.income-row.total .amount {
+  color: #1e293b;
+}
+
+.btn-edit {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #64748b;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-edit:hover {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+/* 지출 계획 섹션 */
+.plan-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.column-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.plan-column-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #64748b;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.btn-add {
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #2563eb;
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.btn-add:hover {
+  background: #dbeafe;
+}
+
+.plan-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  font-size: 14px;
+  color: #475569;
+  border-bottom: 1px solid #f8fafc;
+}
+
+.plan-row.clickable {
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 8px 6px;
+  margin: 0 -6px;
+  transition: background 0.12s;
+}
+
+.plan-row.clickable:hover {
+  background: #f8fafc;
+}
+
+.plan-row .amount {
+  font-weight: 500;
+}
+
+.plan-row.total {
+  margin-top: 8px;
+  padding: 12px 0 0;
+  border-top: 2px solid #e2e8f0;
+  border-bottom: none;
+  font-weight: 700;
+  font-size: 15px;
+  color: #1e293b;
+}
+
+/* ── 차액 섹션 ── */
+.diff-section {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.income-row.diff-positive {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.income-row.diff-positive .amount {
+  color: #16a34a;
+  font-weight: 700;
+}
+
+.income-row.diff-negative {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.income-row.diff-negative .amount {
+  color: #ef4444;
+  font-weight: 700;
+}
+
+.empty-msg {
+  font-size: 14px;
+  color: #94a3b8;
+  padding: 8px 0;
+}
+
+.error-msg {
+  color: #ef4444;
+  font-size: 14px;
+}
+
+.loading-msg {
+  color: #94a3b8;
+  font-size: 14px;
+}

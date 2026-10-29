@@ -1,0 +1,130 @@
+.ym-picker {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+
+/* MonthSelector와 동일한 레이아웃 */
+.month-selector {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.month-btn {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+.month-btn:hover {
+  background: #f1f5f9;
+}
+
+/* 중앙 날짜 클릭 버튼 */
+.ym-trigger {
+  font-size: 18px;
+  font-weight: 600;
+  min-width: 110px;
+  text-align: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #1e293b;
+  padding: 2px 8px;
+  border-radius: 6px;
+  transition: background 0.15s;
+}
+
+.ym-trigger:hover {
+  background: #f1f5f9;
+}
+
+/* 팝업 */
+.ym-popup {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 200;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+  padding: 16px;
+  width: 248px;
+}
+
+/* 연도 네비게이션 */
+.ym-year-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.ym-year-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
+}
+
+.ym-nav-btn {
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 16px;
+  color: #64748b;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.1s, color 0.1s;
+}
+
+.ym-nav-btn:hover {
+  background: #f1f5f9;
+  color: #1e293b;
+  border-color: #cbd5e1;
+}
+
+/* 월 그리드 */
+.ym-months {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+
+.ym-month {
+  padding: 9px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #475569;
+  background: none;
+  border: 1px solid #e2e8f0;
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.1s, color 0.1s, border-color 0.1s;
+}
+
+.ym-month:hover {
+  background: #f1f5f9;
+  border-color: #cbd5e1;
+  color: #1e293b;
+}
+
+.ym-month.selected {
+  background: #2563eb;
+  color: #fff;
+  border-color: #2563eb;
+  font-weight: 700;
+}
